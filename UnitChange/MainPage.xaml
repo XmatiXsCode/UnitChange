@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UnitChange.MainPage">
+    <Grid ColumnDefinitions="*,*,*,*" RowDefinitions="100" ColumnSpacing="10" Padding="5">
+        <Entry x:Name="stopnie" Placeholder="Wpisz wartość"></Entry>
+        <Picker x:Name="rodzaj" Grid.Column="1" Title="Wybierz jednostkę">
+            <Picker.Items>
+                <x:String>° Celcjusza</x:String>
+                <x:String>° Fahrenheita</x:String>
+            </Picker.Items>
+        </Picker>
+        <Button Text="Zamień" Grid.Column="2" Clicked="Button_Clicked"></Button>
+        <Label x:Name="wynik" Grid.Column="3" Text="" VerticalTextAlignment="Center"></Label>
+    </Grid>
+</ContentPage>
